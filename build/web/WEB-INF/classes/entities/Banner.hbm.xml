@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 7, 2017 7:36:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Banner" table="banner" catalog="sathachlaixe" optimistic-lock="version">
+        <id name="bannerMa" type="java.lang.Integer">
+            <column name="banner_ma" />
+            <generator class="identity" />
+        </id>
+        <property name="bannerTen" type="string">
+            <column name="banner_ten" length="50" />
+        </property>
+        <property name="bannerAnh" type="string">
+            <column name="banner_anh" length="50" />
+        </property>
+        <property name="bannerTinhtrang" type="string">
+            <column name="banner_tinhtrang" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

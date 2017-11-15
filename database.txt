@@ -1,0 +1,83 @@
+create database sathachlaixe;
+
+use sathachlaixe;
+
+create table nguoidung(
+	nguoidung_ma int primary key auto_increment,
+    nguoidung_ten nvarchar(50),
+    nguoidung_ngaysinh nvarchar(50),
+    nguoidung_diachi nvarchar(50),
+    nguoidung_cmnd nvarchar(50),
+    nguoidung_gioitinh nvarchar(50),
+    nguoidung_sdt nvarchar(50),
+    nguoidung_email nvarchar(50),
+    nguoidung_taikhoan nvarchar(50),
+    nguoidung_matkhau nvarchar(50),
+    nguoidung_quyen nvarchar(50)
+);
+
+create table hoso(
+	hoso_ma int primary key auto_increment,
+    hoso_ten nvarchar(50),
+    hoso_cmnd nvarchar(50),
+    hoso_sdt nvarchar(50),
+    hoso_email nvarchar(50),
+    hoso_hangthi nvarchar(50),
+    hoso_anhcmnd nvarchar(50),
+    hoso_anhchandung nvarchar(50),
+    hoso_suckhoe nvarchar(50),
+    hoso_ngaylap nvarchar(50),
+    hoso_ngaythi nvarchar(50),
+    hoso_diadiem text
+);
+
+create table tailieu(
+	tailieu_ma int primary key auto_increment,
+    tailieu_ten nvarchar(50),
+    tailieu_tomtat text,
+    tailieu_noidung text,
+    tailieu_danhmuc nvarchar(50),
+    tailieu_taptin nvarchar(50)
+);
+
+create table cauhoi(
+	cauhoi_ma int primary key auto_increment,
+    cauhoi_anh nvarchar(50),
+    cauhoi_dapan nvarchar(50),
+    cauhoi_giaithich text,
+    cauhoi_thamkhao nvarchar(50),
+    cauhoi_hangthi nvarchar(50)
+);
+
+create table banner(
+	banner_ma int primary key auto_increment,
+    banner_ten nvarchar(50),
+    banner_anh nvarchar(50),
+    banner_tinhtrang nvarchar(50)
+);
+
+create table dmtl(
+	dmtl_ma int primary key auto_increment,
+    dmtl_ten nvarchar(50)
+);
+
+create table thuchanh(
+	thuchanh_ma int primary key auto_increment,
+    thuchanh_ngay nvarchar(50),
+    thuchanh_diadiem text,
+    thuchanh_tinhtp nvarchar(50)
+);
+
+create table lythuyet(
+	lythuyet_ma int primary key auto_increment,
+    lythuyet_cmnd nvarchar(50),
+    lythuyet_dapan nvarchar(50),
+    lythuyet_ketqua nvarchar(50),
+    lythuyet_ngaythi nvarchar(50)
+);
+
+create table thongbao(
+	thongbao_ma int primary key auto_increment,
+    thongbao_noidung text,
+    thongbao_thoigian nvarchar(50)
+);

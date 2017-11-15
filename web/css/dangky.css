@@ -1,0 +1,31 @@
+.container {
+    width:600px;
+}
+
+.row p {
+    float:right;
+}
+
+.row a {
+    color:red;
+    float:right;
+    clear:right;
+}
+
+.form-group {
+    padding:40px;
+    border:1px solid black;
+}
+
+.res {
+    margin:0 auto; 
+    width:60px;
+}
+
+#result, #result2 {
+    color: red;
+}
+
+.redborder { 
+    border: 1px solid #E34234; 
+}

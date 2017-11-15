@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 7, 2017 7:36:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Nguoidung" table="nguoidung" catalog="sathachlaixe" optimistic-lock="version">
+        <id name="nguoidungMa" type="java.lang.Integer">
+            <column name="nguoidung_ma" />
+            <generator class="identity" />
+        </id>
+        <property name="nguoidungTen" type="string">
+            <column name="nguoidung_ten" length="50" />
+        </property>
+        <property name="nguoidungNgaysinh" type="string">
+            <column name="nguoidung_ngaysinh" length="50" />
+        </property>
+        <property name="nguoidungDiachi" type="string">
+            <column name="nguoidung_diachi" length="50" />
+        </property>
+        <property name="nguoidungCmnd" type="string">
+            <column name="nguoidung_cmnd" length="50" />
+        </property>
+        <property name="nguoidungGioitinh" type="string">
+            <column name="nguoidung_gioitinh" length="50" />
+        </property>
+        <property name="nguoidungSdt" type="string">
+            <column name="nguoidung_sdt" length="50" />
+        </property>
+        <property name="nguoidungEmail" type="string">
+            <column name="nguoidung_email" length="50" />
+        </property>
+        <property name="nguoidungTaikhoan" type="string">
+            <column name="nguoidung_taikhoan" length="50" />
+        </property>
+        <property name="nguoidungMatkhau" type="string">
+            <column name="nguoidung_matkhau" length="50" />
+        </property>
+        <property name="nguoidungQuyen" type="string">
+            <column name="nguoidung_quyen" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

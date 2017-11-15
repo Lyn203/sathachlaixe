@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 7, 2017 7:36:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Cauhoi" table="cauhoi" catalog="sathachlaixe" optimistic-lock="version">
+        <id name="cauhoiMa" type="java.lang.Integer">
+            <column name="cauhoi_ma" />
+            <generator class="identity" />
+        </id>
+        <property name="cauhoiAnh" type="string">
+            <column name="cauhoi_anh" length="50" />
+        </property>
+        <property name="cauhoiNoidung" type="string">
+            <column name="cauhoi_noidung" length="50" />
+        </property>
+        <property name="cauhoiDapana" type="string">
+            <column name="cauhoi_dapana" length="50" />
+        </property>
+        <property name="cauhoiDapanb" type="string">
+            <column name="cauhoi_dapanb" length="50" />
+        </property>
+        <property name="cauhoiDapanc" type="string">
+            <column name="cauhoi_dapanc" length="50" />
+        </property>
+        <property name="cauhoiDapan" type="string">
+            <column name="cauhoi_dapan" length="50" />
+        </property>
+        <property name="cauhoiGiaithich" type="string">
+            <column name="cauhoi_giaithich" length="65535" />
+        </property>
+        <property name="cauhoiThamkhao" type="string">
+            <column name="cauhoi_thamkhao" length="50" />
+        </property>
+        <property name="cauhoiHangthi" type="string">
+            <column name="cauhoi_hangthi" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
